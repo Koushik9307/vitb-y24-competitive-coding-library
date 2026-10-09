@@ -3,7 +3,7 @@ package BitManipulation;
 class BitManipulation {
     public static long getBit(long n, int k) {
         
-       return (n >> k) & 1;
+       return (n >> k) & 1;//to get the kth bit of n.
     }
 
     public static long setBit(long n, int k) {
@@ -15,7 +15,7 @@ class BitManipulation {
         
      return n & ~(1L << k);
     }
-
+  
     public static long toggleBit(long n, int k) {
         
         return n ^ (1L << k);
